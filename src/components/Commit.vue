@@ -1,8 +1,6 @@
 <template>
-  <li>
-    <router-link to="/details">
-      {{ details.sha }}
-    </router-link>
+  <li class="list-group-item list-group-item-action">
+    <router-link to="/details">{{ details.sha }}</router-link>
   </li>
 </template>
 

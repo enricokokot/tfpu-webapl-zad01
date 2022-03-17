@@ -1,6 +1,6 @@
 <template>
-  <h1>This is the Home page</h1>
-  <ul>
+  <h1 class="mb-2">This is the Home page</h1>
+  <ul class="list-group">
     <Commit
       v-for="commit in commits"
       :key="commit.sha"
