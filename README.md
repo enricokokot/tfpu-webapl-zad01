@@ -1,19 +1,9 @@
 # tfpu-webapl-zad01
 
-## Project setup
-```
-npm install
-```
+**Autor:** Enrico Kokot
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+**JMBAG**: 0009068626
 
-### Compiles and minifies for production
-```
-npm run build
-```
+**Kolegij**: Web aplikacije
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**Opis zadatka**: Zadatak vam je napraviti malu Vue.js aplikaciju koja će prikazivati commitove vuejs repozitorija.
