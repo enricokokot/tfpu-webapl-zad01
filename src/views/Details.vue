@@ -1,11 +1,34 @@
 <template>
   <div>
-    <h1>This is the Details page</h1>
-    <p>Author name: {{ commit.commit.author.name }}</p>
-    <p>Author email: {{ commit.commit.author.email }}</p>
-    <p>Commit date: {{ commit.commit.author.date }}</p>
-    <p>Commit message: {{ commit.commit.message }}</p>
-    <router-link to="/">Back</router-link>
+    <h1 class="pt-3">Details</h1>
+    <div
+      class="card position-absolute top-50 start-50 translate-middle text-start"
+    >
+      <div class="card-header text-center">{{ commit.sha }}</div>
+      <div class="card-body">
+        <h5 class="card-title fw-bold">Author name</h5>
+        <p class="card-text">
+          {{ commit.commit.author.name }}
+        </p>
+        <h5 class="card-title fw-bold">Author email</h5>
+        <p class="card-text">
+          {{ commit.commit.author.email }}
+        </p>
+        <h5 class="card-title fw-bold">Commit date</h5>
+        <p class="card-text">
+          {{ commit.commit.author.date }}
+        </p>
+        <h5 class="card-title fw-bold">Commit message</h5>
+        <p class="card-text">
+          {{ commit.commit.message }}
+        </p>
+        <div class="text-center">
+          <router-link to="/"
+            ><button class="btn btn-primary">Back</button></router-link
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
