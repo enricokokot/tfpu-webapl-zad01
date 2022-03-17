@@ -1,6 +1,6 @@
 <template>
-  <h1 class="mb-2">This is the Home page</h1>
-  <ul class="list-group">
+  <h1 class="pt-3 mb-2 fs-3">Home</h1>
+  <ul class="list-group list-group-flush">
     <Commit
       v-for="commit in commits"
       :key="commit.sha"

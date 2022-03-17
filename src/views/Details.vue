@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="pt-3">Details</h1>
+    <h1 class="pt-3 fs-3">Details</h1>
     <div
       class="card position-absolute top-50 start-50 translate-middle text-start"
     >
