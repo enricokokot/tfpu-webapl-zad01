@@ -1,7 +1,9 @@
 <template>
-  <div>
-    {{ details.sha }}
-  </div>
+  <li>
+    <router-link to="/details">
+      {{ details.sha }}
+    </router-link>
+  </li>
 </template>
 
 <script>

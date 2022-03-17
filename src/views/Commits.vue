@@ -1,13 +1,19 @@
 <template>
   <h1>This is the Home page</h1>
-  <router-link to="details">
-    <Commit v-for="commit in commits" :key="commit.node_id" :details="commit" />
-  </router-link>
+  <ul>
+    <Commit
+      v-for="commit in commits"
+      :key="commit.sha"
+      :details="commit"
+      @click="setCommit(commit.sha)"
+    />
+  </ul>
 </template>
 
 <script>
 import axios from "axios";
 import Commit from "@/components/Commit.vue";
+import store from "@/store";
 
 export default {
   name: "Commits",
@@ -18,12 +24,16 @@ export default {
     axios
       .get("https://api.github.com/repos/vuejs/vue/commits")
       .then((response) => {
-        // console.log(response.data);
         this.commits = response.data;
       });
   },
   components: {
     Commit,
+  },
+  methods: {
+    setCommit(sha) {
+      store.currentCommit = sha;
+    },
   },
 };
 </script>
